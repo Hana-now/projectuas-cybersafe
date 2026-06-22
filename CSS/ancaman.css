@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#ancaman{
+    min-height:100vh;
+
+    background-image:url("../assets/bgancaman.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    font-family:"Times new roman", sans-serif;
+}
+
+.ancaman{
+    padding:140px 50px 50px;
+}
+
+.ancaman h1{
+    color:white;
+    font-size:70px;
+    text-align:center;
+    margin-bottom:60px;
+
+    text-shadow:
+    0 0 10px #00bfff,
+    0 0 20px #00bfff;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    min-height:470px;
+
+    text-decoration:none;
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    background:rgba(0,0,0,0.45);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    transition:0.35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.card img{
+    width:170px;
+    height:170px;
+    object-fit:contain;
+}
+
+.card h2{
+    margin-top:20px;
+    margin-bottom:15px;
+
+    font-size:34px;
+
+    font-family:"Times New Roman", serif;
+}
+
+.card p{
+    font-size:17px;
+    line-height:1.7;
+
+    color:#e5e5e5;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+}
+
+/* PHISHING */
+
+.phishing{
+    border:2px solid #00c8ff;
+
+    box-shadow:
+    0 0 15px rgba(0,200,255,.4);
+}
+
+.phishing:hover{
+    box-shadow:
+    0 0 30px rgba(0,200,255,.9);
+}
+
+/* SCAM */
+
+.scam{
+    border:2px solid #ff9900;
+
+    box-shadow:
+    0 0 15px rgba(255,153,0,.4);
+}
+
+.scam:hover{
+    box-shadow:
+    0 0 30px rgba(255,153,0,.9);
+}
+
+/* MALWARE */
+
+.malware{
+    border:2px solid #ff3355;
+
+    box-shadow:
+    0 0 15px rgba(255,51,85,.4);
+}
+
+.malware:hover{
+    box-shadow:
+    0 0 30px rgba(255,51,85,.9);
+}
+
+/* garis bawah judul */
+
+.card h2::after{
+    content:"";
+
+    display:block;
+
+    width:80px;
+    height:3px;
+
+    margin:12px auto 0;
+}
+
+.phishing h2::after{
+    background:#00c8ff;
+}
+
+.scam h2::after{
+    background:#ff9900;
+}
+
+.malware h2::after{
+    background:#ff3355;
+}

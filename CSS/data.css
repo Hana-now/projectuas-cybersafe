@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#data{
+    min-height:100vh;
+    background-image:url("../assets/bgdata.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color:white;
+}
+
+.data-section{
+    max-width:1400px;
+    margin:auto;
+    padding:120px 60px 80px;
+}
+
+.data-section h1{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+/* =======================
+   STAT CARD
+======================= */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.stat-card{
+    text-decoration:none;
+    color:white;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+
+    padding:25px 20px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 20px rgba(0,212,255,.35);
+}
+
+.stat-card h2{
+    font-size:2rem;
+    color:#00d4ff;
+    margin-bottom:8px;
+}
+
+.stat-card p{
+    font-size:1rem;
+}
+
+/* =======================
+   HERO SECTION
+======================= */
+
+.hero-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-bottom:45px;
+}
+
+/* KOTAK KIRI */
+
+.hero-left{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    min-height:240px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.hero-number{
+    font-size:5rem;
+    color:#00d4ff;
+    font-weight:bold;
+    line-height:1;
+    margin-bottom:10px;
+}
+
+.hero-left h2{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.hero-left p{
+    max-width:450px;
+    line-height:1.6;
+}
+
+/* KOTAK KANAN */
+
+.hero-right{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    min-height:240px;
+}
+
+.hero-right h3{
+    text-align:center;
+    font-size:1.8rem;
+    margin-bottom:15px;
+}
+
+/*  */
+
+.trend-chart{
+    width:100%;
+    height:240px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    margin-top:10px;
+}
+
+.trend-chart img{
+    width:95%;;
+    height:100%;
+
+    object-fit:contain;
+
+    display:block;
+
+    border-radius: 50px;
+}
+
+/* TEXT DI BAWAH CHART */
+
+.trend-text{
+    text-align:center;
+    margin-top:15px;
+    font-size:1rem;
+
+    position:relative;
+    z-index:2;
+}
+
+/* =======================
+   CHART BATANG
+======================= */
+
+.chart{
+    width:100%;
+    margin-top:20px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:220px 1fr 80px;
+
+    align-items:center;
+
+    margin-bottom:22px;
+}
+
+.row span:first-child{
+    font-size:1.1rem;
+}
+
+.bar{
+    height:30px;
+    border-radius:20px;
+}
+
+/* BAR WIDTH */
+
+.bar-phishing{ width:100%; background:#00d4ff; }
+.bar-scam{ width:70%; background:#32cfff; }
+.bar-malware{ width:58%; background:#58d8ff; }
+.bar-ransom{ width:40%; background:#7fe4ff; }
+.bar-lainnya{ width:28%; background:#b5f1ff; }
+
+.persen{
+    text-align:right;
+    font-size:1rem;
+}
+
+/* =======================
+   SUMBER
+======================= */
+
+.sumber{
+    margin-top:40px;
+    text-align:center;
+    font-size:1rem;
+    opacity:.85;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+
+@media(max-width:900px){
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero-section{
+        grid-template-columns:1fr;
+    }
+}

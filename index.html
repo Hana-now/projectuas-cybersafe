@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/beranda.css">
+    <link rel="stylesheet" href="css/ancaman.css">
+    <link rel="stylesheet" href="css/data.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/tips.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+</head>
+<body>
+
+<nav id="navbar"></nav>
+
+<!-- BERANDA -->
+<section id="beranda">
+
+    <section class="hero">
+
+        <div class="container">
+
+            <img src="assets/shield.png" alt="Shield" class="shield">
+
+            <div class="glass-card">
+
+                <h1>CYBERSAFE</h1>
+
+                <h3>Keamanan Digital Dan Hindari Ancaman Online</h3>
+
+                <p>
+                    Edukasi, data dan tips untuk meningkatkan kesadaran <br>
+                    serta melindungi diri berbagai ancaman digital.
+                </p>
+
+                <a href="#ancaman" class="btn">
+                    MULAI SEKARANG
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+<!-- ANCAMAN -->
+<section id="ancaman">
+
+    <section class="ancaman">
+
+        <h1>ANCAMAN DIGITAL</h1>
+
+    <div class="cards">
+
+        <a href="phishing.html" class="card phishing">
+            <img src="assets/warna-phishing.png" alt="Phishing">
+            <h2>PHISHING</h2>
+            <p>
+                Pencurian data pribadi melalui email,
+                pesan, atau website palsu.
+            </p>
+        </a>
+
+        <a href="scamonline.html" class="card scam">
+            <img src="assets/warna-scam.png" alt="Scam Online">
+            <h2>SCAM ONLINE</h2>
+            <p>
+                Penipuan digital untuk mengambil
+                uang atau informasi korban.
+            </p>
+        </a>
+
+        <a href="malware.html" class="card malware">
+            <img src="assets/warna-malware.png" alt="Malware">
+            <h2>MALWARE</h2>
+            <p>
+                Program berbahaya yang merusak,
+                mencuri data, atau mengganggu sistem.
+            </p>
+        </a>
+
+    </div>
+
+    </section>
+
+</section>
+
+<!-- DATA -->
+<section id="data">
+
+    <section class="data-section">
+
+        <h1>DATA CYBERCRIME DI INDONESIA</h1>
+
+        <!-- STATISTIK -->
+
+        <div class="stats-grid">
+
+            <a class="stat-card" href="https://web.apjii.or.id/berita/d/apjii-jumlah-pengguna-internet-indonesia-tembus-221-juta-orang" target="_blank">
+                <h2>221,5 Juta</h2>
+                <p>Pengguna Internet</p>
+            </a>
+
+            <a class="stat-card" href="https://20.detik.com/detikupdate/20240903-240903088/kominfo-terima-572-ribu-aduan-penipuan-online-dari-2017-2024" target="_blank">
+                <h2>572 Ribu+</h2>
+                <p>Aduan Penipuan</p>
+            </a>
+
+            <a class="stat-card" href="https://www.kanalaceh.com/2024/02/01/penipuan-online-dan-pencurian-data-pribadi-diprediksi-dominasi-2024/" target="_blank">
+                <h2>32,5%</h2>
+                <p>Ancaman Utama</p>
+            </a>
+
+            <a class="stat-card" href="https://ejournal.digitechuniversity.ac.id/index.php/itech/article/view/173" target="_blank">
+                <h2>26,7 Juta</h2>
+                <p>Aktivitas Phishing</p>
+            </a>
+
+        </div>
+
+        <!-- HERO -->
+
+        <div class="hero-section">
+
+            <div class="hero-left">
+
+                <div class="hero-number">45%</div>
+
+                <h2>PHISHING</h2>
+
+                <p>
+                    Ancaman siber paling dominan yang memanfaatkan tautan,
+                    email, dan situs palsu untuk mencuri data pengguna.
+                </p>
+
+            </div>
+
+            <div class="hero-right">
+
+                <h3>Trend Kasus</h3>
+
+                <div class="trend-chart">
+                    <img src="assets/trend-cybercrime.png" alt="Trend Cybercrime 2021-2024">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- GRAFIK -->
+
+        <div class="chart">
+
+            <div class="row">
+                <span>Phishing</span>
+                <div class="bar bar-phishing"></div>
+                <span class="persen">45%</span>
+            </div>
+
+            <div class="row">
+                <span>Scam Marketplace</span>
+                <div class="bar bar-scam"></div>
+                <span class="persen">30%</span>
+            </div>
+
+            <div class="row">
+                <span>Malware</span>
+                <div class="bar bar-malware"></div>
+                <span class="persen">25%</span>
+            </div>
+
+            <div class="row">
+                <span>Ransomware</span>
+                <div class="bar bar-ransom"></div>
+                <span class="persen">15%</span>
+            </div>
+
+            <div class="row">
+                <span>Lainnya</span>
+                <div class="bar bar-lainnya"></div>
+                <span class="persen">10%</span>
+            </div>
+
+        </div>
+
+        <p class="sumber">
+            Klik kartu statistik untuk melihat sumber resmi data.
+        </p>
+
+    </section>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+    <section class="quiz-container">
+
+        <h1>QUIZ KEAMANAN DIGITAL</h1>
+
+        <div class="quiz-content">
+
+            <div class="question-box">
+
+                <div class="question-header">
+
+                    <p id="nomor"></p>
+
+                    <div id="skorBox" class="skor-box">0/100</div>
+
+                </div>
+
+                <br>
+
+                <p id="soal"></p>
+
+                <!-- PROGRESS -->
+                <div class="progress-box">
+
+                    <div class="progress-top">
+                        <span id="progressText"></span>
+                        <span id="progressPercent">0%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div id="progressFill"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="answer-box" id="jawaban"></div>
+
+        </div>
+
+        <div id="feedback">
+            FEEDBACK : Jawaban Anda akan muncul di sini...
+        </div>
+
+        <div class="next-container">
+            <button id="nextBtn" onclick="nextQuestion()">
+                Selanjutnya →
+            </button>
+        </div>
+
+    </section>
+</section>
+
+<!-- TIPS -->
+<section id="tips">
+    <section class="tips-section">
+
+        <div class="tips-header">
+
+            <h1>TIPS KEAMANAN DIGITAL</h1>
+
+            <p>
+                Lindungi data pribadi dan akunmu
+                dengan menerapkan langkah-langkah berikut.
+            </p>
+
+            <div class="divider"></div>
+
+        </div>
+
+        <div class="tips-container">
+
+            <div class="tip-card">
+
+                <img src="assets/password.png" alt="Password">
+
+                <div class="tip-text">
+                    <h2>Gunakan Password Kuat</h2>
+
+                    <p>
+                        Gunakan kombinasi huruf besar,
+                        huruf kecil, angka, dan simbol
+                        agar akun lebih aman.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tip-card">
+
+                <img src="assets/link.png" alt="Link">
+
+                <div class="tip-text">
+                    <h2>Jangan Klik Link Sembarangan</h2>
+
+                    <p>
+                        Periksa alamat website dan
+                        pastikan berasal dari sumber
+                        yang terpercaya.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tip-card">
+
+                <img src="assets/2fa.png" alt="2FA">
+
+                <div class="tip-text">
+                    <h2>Aktifkan Two-Factor Authentication</h2>
+
+                    <p>
+                        Tambahkan lapisan keamanan
+                        ekstra pada akun digital Anda.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tip-card">
+
+                <img src="assets/otp.png" alt="OTP">
+
+                <div class="tip-text">
+                    <h2>Jangan Bagikan OTP/PIN</h2>
+
+                    <p>
+                        OTP dan PIN bersifat rahasia
+                        dan tidak boleh diberikan
+                        kepada siapa pun.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            © 2025 CyberSafe. Stay safe, stay secure!
+        </footer>
+
+        <div class="sumber">
+            Sumber Data: BSSN | Kominfo | APJII
+        </div>
+
+    </section>
+</section>
+
+<script src="js/quiz.js"></script>
+<script src="js/navbar.js"></script>
+
+</body>
+</html>
